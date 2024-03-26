@@ -1,0 +1,38 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+input, button {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 20rem;
+  height: 2rem;
+  font-size: .9rem;
+}
+
+#images {
+  display: grid;
+  grid-auto-flow: column;
+
+  height: 80vh;
+
+}
+
+.image-container {
+  width: 640px;
+  height: 640px;
+  background-color: gray;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  overflow: hidden;
+}
+
+.image-container canvas{
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+}
